@@ -36,6 +36,7 @@ namespace CompanyEmployees
             services.ConfigureLoggerService();
             services.ConfigureSQLContext(Configuration);
             services.ConfigureRepositoryManager();
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers();
             /*services.AddSwaggerGen(c =>
